@@ -17,7 +17,10 @@ class Queue(AbstractQueue):
         return self._data.popleft()
 
     def search(self, index):
-        if 0 <= index <= len(self._data) - 1:
+        if 0 <= index <= (len(self._data) - 1):
             return self._data[index]
 
         raise IndexError("index out of range")
+
+    def is_empty(self):
+        return not len(self._data)

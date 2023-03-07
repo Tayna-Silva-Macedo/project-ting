@@ -27,12 +27,15 @@ def process(path_file, instance):
         return sys.stdout.write(f"{file_info}\n")
 
 
-def remove(instance):
-    """Aqui irá sua implementação"""
+def remove(instance: Queue):
+    if instance.is_empty():
+        return sys.stdout.write("Não há elementos\n")
+
+    file_removed = instance.dequeue()
+    file_name = file_removed["nome_do_arquivo"]
+
+    return sys.stdout.write(f"Arquivo {file_name} removido com sucesso\n")
 
 
 def file_metadata(instance, position):
     """Aqui irá sua implementação"""
-
-
-process("statics/arquivo_teste.txt", Queue())
