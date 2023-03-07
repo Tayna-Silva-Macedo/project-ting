@@ -6,8 +6,8 @@ from ting_file_management.queue import Queue
 
 def is_new_file(path_file, instance):
     for index in range(len(instance)):
-        element = instance.search(index)
-        if element["nome_do_arquivo"] == path_file:
+        file = instance.search(index)
+        if file["nome_do_arquivo"] == path_file:
             return False
 
     return True
@@ -38,4 +38,9 @@ def remove(instance: Queue):
 
 
 def file_metadata(instance, position):
-    """Aqui irá sua implementação"""
+    try:
+        file = instance.search(position)
+    except IndexError:
+        return sys.stderr.write("Posição inválida")
+
+    return sys.stdout.write(f"{file}")
