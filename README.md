@@ -2,7 +2,7 @@
 
 Este é um projeto da [Trybe](https://www.betrybe.com/) que foi desenvolvido no módulo de Ciência da Computação.
 
-Trata-se da implementação de um programa que simula um algoritmo de indexação de documentos similar ao do Google. Este programa é capaz de identificar ocorrências de termos em arquivos TXT. Retornando uma lista de objetos com o nome do arquivos,linhas onde o termo buscado aparece e, caso deseje, o conteúdo desta linha.
+Trata-se da implementação de um programa que simula um algoritmo de indexação de documentos similar ao do Google. Este programa é capaz de identificar ocorrências de termos em arquivos TXT. Retornando uma lista de objetos com o nome do arquivo, linhas onde o termo buscado aparece e, caso deseje, o conteúdo desta linha.
 
 ## Tecnologias utilizadas
 
